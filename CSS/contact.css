@@ -230,12 +230,15 @@ body {
         /* font-size: 2vw; */
     }
     .title{
-        
+        font-size: 4vw;
+        margin: 2vw;
+        line-height: 50px;
     }
-
+    
     .info{
         line-height: 22px;
         font-size: 3.5vw;
+        line-height: 30px;
     }
     
     .container{
