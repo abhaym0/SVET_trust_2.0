@@ -12,8 +12,8 @@ body {
 }
 
 .map{
-    height: 50%;
-    width: 50%;
+    height: 80%;
+    width: 80%;
     
 }
 .hero{
@@ -55,7 +55,7 @@ body {
 }
 .media{
     margin: 20px;
-    border: 1px solid wheat;
+    border: 1px solid black;
 }
 
 .media .i{
@@ -261,7 +261,7 @@ body {
     }
     .media{
         margin: 20px;
-        border: 1px solid wheat;
+        border: 1px solid black;
     }
     
     .media .i{
