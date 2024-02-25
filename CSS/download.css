@@ -1,9 +1,9 @@
-.page1{
+.page1 {
     height: auto;
     width: 100vw;
 }
 
-.download-hero{
+.download-hero {
     height: 60vh;
     width: 100%;
     margin: 100px 0px;
@@ -12,44 +12,47 @@
     justify-content: center;
 }
 
-.card-container{
-    height: 100vh;
+.card-container {
+    height: auto;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
+    /* background: transparent; */
+    /* position: relative; */
     /* flex-direction: column; */
     /* background: lightblue; */
 }
 
-.card-container a{
+.card-container a {
     text-decoration: none;
     color: black;
 }
 
-.card{
+.card {
     height: 55vh;
     width: 22vw;
     /* background: lightseagreen; */
     display: flex;
     flex-direction: column;
+    /* position: absolute; */
     align-items: center;
-    background: linear-gradient(to bottom,#0055ff, #009CFF);
+    background: linear-gradient(to bottom, #0055ff, #009CFF);
     border-radius: 20px;
     cursor: pointer;
     justify-content: center;
 
 }
 
-.card:hover{
+.card:hover {
     transition: all ease .5s;
     transform: scale(104%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.556), 0 6px 20px 0 rgba(0, 0, 0, 0.41);
 }
 
-.img-container{
-    height:100%;
+.img-container {
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -57,14 +60,14 @@
 }
 
 
-.card img{
+.card img {
     height: 100%;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
 
-.card img:hover{
+.card img:hover {
     height: 90%;
     width: 90%;
     border-radius: 20px 20px 20px 20px;
@@ -72,42 +75,42 @@
 
 }
 
-.card-title{
+.card-title {
     width: 100%;
     height: 15%;
     background: #009CFF;
-    display:flex;
+    display: flex;
     color: white;
     font-size: 1.3vw;
     font-weight: bold;
     letter-spacing: .9px;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.card-button{
-    background:#FFF ;
+.card-button {
+    background: #FFF;
     width: 100%;
     height: 15%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2vw;
     font-weight: 600;
     border-radius: 0px 0px 20px 20px;
-    
+
 }
 
 /* media query for tabs */
 
 @media (max-width:1024px) {
-    .page1{
+    .page1 {
         height: 100vh;
         width: 100vw;
     }
-    
-    .download-hero{
+
+    .download-hero {
         height: 100vh;
         width: 100%;
         display: flex;
@@ -115,8 +118,8 @@
         margin: 100px 0px;
         justify-content: center;
     }
-    
-    .card-container{
+
+    .card-container {
         height: 100vh;
         width: 100vw;
         display: flex;
@@ -124,10 +127,12 @@
         justify-content: center;
         gap: 15px;
         flex-direction: column;
+        overflow: auto;
+
         /* background: lightblue; */
     }
-    
-    .card{
+
+    .card {
         height: 60vh;
         width: 59vw;
         /* background: lightseagreen; */
@@ -136,55 +141,55 @@
         align-items: center;
         justify-content: center;
     }
-    
-    .img-container{
-        height:100%;
+
+    .img-container {
+        height: 100%;
         width: 100%;
     }
-    
-    
-    .card img{
+
+
+    .card img {
         height: 100%;
         width: 100%;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
     }
-    
-    .card-title{
+
+    .card-title {
         width: 100%;
         height: 15%;
         background: #009CFF;
-        display:flex;
+        display: flex;
         color: white;
         font-size: 3.6vw;
         font-weight: bold;
         letter-spacing: .9px;
         align-items: center;
         justify-content: center;
-        
+
     }
-    
-    .card-button{
-        background:#FFF ;
+
+    .card-button {
+        background: #FFF;
         width: 100%;
         height: 15%;
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         font-size: 4vw;
         font-weight: 600;
         border-radius: 0px 0px 20px 20px;
-        
+
     }
 }
 
 @media (max-width:600px) {
-    .page1{
+    .page1 {
         height: 100vh;
         width: 100vw;
     }
-    
-    .download-hero{
+
+    .download-hero {
         height: 80vh;
         width: 100%;
         display: flex;
@@ -192,19 +197,21 @@
         align-items: center;
         justify-content: center;
     }
-    
-    .card-container{
+
+    .card-container {
         height: 100vh;
         width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 15px;
+        overflow: auto;
+
         /* flex-direction: column; */
         /* background: lightblue; */
     }
-    
-    .card{
+
+    .card {
         height: 55vh;
         width: 68vw;
         /* background: lightseagreen; */
@@ -213,44 +220,44 @@
         align-items: center;
         justify-content: center;
     }
-    
-    .img-container{
-        height:100%;
+
+    .img-container {
+        height: 100%;
         width: 100%;
     }
-    
-    
-    .card img{
+
+
+    .card img {
         height: 100%;
         width: 100%;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
     }
-    
-    .card-title{
+
+    .card-title {
         width: 100%;
         height: 15%;
         background: #009CFF;
-        display:flex;
+        display: flex;
         color: white;
         font-size: 4vw;
         font-weight: bold;
         letter-spacing: .9px;
         align-items: center;
         justify-content: center;
-        
+
     }
-    
-    .card-button{
-        background:#FFF ;
+
+    .card-button {
+        background: #FFF;
         width: 100%;
         height: 15%;
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         font-size: 4vw;
         font-weight: 600;
         border-radius: 0px 0px 20px 20px;
-        
+
     }
 }

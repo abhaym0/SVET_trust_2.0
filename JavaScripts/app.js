@@ -43,7 +43,7 @@ function animateToFullscreen(element) {
 
         // Animate image to simulate moving towards the viewer
         gsap.to(fullscreenImage, {
-            duration: 1.5,
+            duration: .9,
             z: 0,
             scale: 1,
             ease: "power3.out"

@@ -11,6 +11,7 @@
         height: 100vh;
         width: 100%;
         display: flex;
+        overflow: auto;
         align-items: center;
         justify-content: center;
 
@@ -23,7 +24,7 @@
     }
 
     .btn{
-        border: 1px solid black;
+        border: 1px solid #ffff;
         width: 50%;
         padding: 15px;
         border-radius: 30px;
@@ -86,7 +87,7 @@
     
     .gallery-item {
         flex: 1 1 220px; /* Adjust this to change the base size of the gallery items */
-        max-width: 220px; /* Maximum size of gallery items */
+        max-width: 300px; /* Maximum size of gallery items */
         margin: 10px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         cursor: pointer;
@@ -100,6 +101,8 @@
     
     .gallery-item:hover {
         transform: scale(1.05); /* Slight scale effect on hover */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.721), 0 6px 20px 0 rgba(0, 0, 0, 0.41);
+
     }
     
     .gallery-image {
@@ -123,6 +126,8 @@
     #fullscreen-image {
         max-width: 100%;
         max-height: 100%;
+        border-radius: 15px;
+        /* padding: 1vw; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -131,7 +136,7 @@
 
     .view-btn {
         cursor: pointer;
-        border: 1px solid black;
+        border: 1px solid transparent;
         width: 50%;
         padding: 8px;
         border-radius: 30px;
