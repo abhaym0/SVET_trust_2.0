@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/photo.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Photo Gallery</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="page1">
+            <div class="nav-bar">
+                <div class="nav-left  ">
+                    <div class="logo-wrapper">
+                        <div class="logo">
+                            <img src="../Assests/SVET_logo_1.png" alt="logo">
+                        </div>
+                        <div class="logo-title">
+                            <img src="../Assests/SVET_logo_2.png" alt="no">
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <ul class="nav-ul">
+                        <li>About us</li>
+                        <li>Courses</li>
+                        <li>Download</li>
+                        <li>Photo gallery</li>
+                        <li>Admission</li>
+                        <li><a href="/HTMLs/contact.html">Our contacts</a></li>
+                    </ul>
+                    <i class="ri-menu-line"></i>
+                    <!-- <div class="side-nav">
+                    <ul>
+                      <li>About us</li>
+                      <li>Courses</li>
+                      <li>Download</li>
+                      <li>Photo gallery</li>
+                      <li>Admission</li>
+                      <li>Our contacts</li>
+                    </ul>
+                  </div> -->
+                </div>
+            </div>
+            <div class="photo-hero">
+                <div class="gallery">
+                    <div class="gallery-item" onclick="animateToFullscreen(this)">
+                        <img src="../Assests/PhotoGallery_1/1.jpg" alt="Gallery Image 1" class="gallery-image">
+                        <button class="view-btn">Click! </button>
+                    </div>
+                    <div class="gallery-item" onclick="animateToFullscreen(this)">
+                        <img src="../Assests/PhotoGallery_1/3.jpg" alt="Gallery Image 2" class="gallery-image">
+                        <button class="view-btn">Click! </button>
+
+                    </div>
+                    <div class="gallery-item" onclick="animateToFullscreen(this)">
+                        <img src="../Assests/PhotoGallery_1/5.jpg" alt="Gallery Image 1" class="gallery-image">
+                        <button class="view-btn">Click! </button>
+                    </div>
+                    <div class="gallery-item" onclick="animateToFullscreen(this)">
+                        <img src="../Assests/PhotoGallery_1/11.jpg" alt="Gallery Image 1" class="gallery-image">
+                        <button class="view-btn">Click! </button>
+                    </div>
+                    <div class="gallery-item" onclick="animateToFullscreen(this)">
+                        <img src="../Assests/PhotoGallery_1/14.jpg" alt="Gallery Image 1" class="gallery-image">
+                        <button class="view-btn">Click! </button>
+                    </div>
+                    <div class="gallery-item" onclick="animateToFullscreen(this)">
+                        <img src="../Assests/PhotoGallery_1/17.jpg" alt="Gallery Image 1" class="gallery-image">
+                        <button class="view-btn">Click! </button>
+                    </div>
+                    <div class="gallery-item" onclick="animateToFullscreen(this)">
+                        <img src="../Assests/PhotoGallery_1/22-1.jpg" alt="Gallery Image 1" class="gallery-image">
+                        <button class="view-btn">Click! </button>
+                    </div>
+
+                    <div class="gallery-item" onclick="animateToFullscreen(this)">
+                        <img src="../Assests/PhotoGallery_1/27.jpg" alt="Gallery Image 1" class="gallery-image">
+                        <button class="view-btn">Click! </button>
+                    </div>
+                    <div class="gallery-item" onclick="animateToFullscreen(this)">
+                        <img src="../Assests/PhotoGallery_1/47.jpg" alt="Gallery Image 1" class="gallery-image">
+                        <button class="view-btn">Click! </button>
+                    </div>
+                    <div class="gallery-item" onclick="animateToFullscreen(this)">
+                        <img src="../Assests/PhotoGallery_1/48.jpg" alt="Gallery Image 1" class="gallery-image">
+                        <button class="view-btn">Click! </button>
+                    </div>
+                </div>
+                <div id="fullscreen-overlay" onclick="closeFullscreen()">
+                    <img id="fullscreen-image" src="" alt="Fullscreen Image">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="social-2">
+        <div class="logo-container">
+            <img src="../Assests/SVET_logo_1.png" alt="">
+        </div>
+        <h1 class="social-2-title">We are social</h1>
+        <h3 class="social-2-subtitle">Lots of content waiting for you on our pages</h3>
+        <div class="media-container">
+            <div class="media">
+                <i class="ri-facebook-fill"></i>
+            </div>
+            <div class="media">
+                <i class="ri-twitter-x-fill"></i>
+            </div>
+            <div class="media">
+                <i class="ri-instagram-fill"></i>
+            </div>
+            <div class="media">
+                <i class="ri-whatsapp-fill"></i>
+            </div>
+            <div class="media">
+                <i class="ri-youtube-fill">
+                </i>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="part1">
+            <a href="">Privacy policy</a>
+            <a href="">Terms and conditions</a>
+            <a href="">Pricing and refund</a>
+        </div>
+        <div class="part2">
+            <a href="">About us</a>
+            <a href="">Bug bounty</a>
+            <a href="">Hire from us</a>
+        </div>
+        <div class="part3">
+            <a href="">Community</a>
+            <a href="">Our Students</a>
+        </div>
+        <div class="part4">
+            <p class="cu">Contact us</p>
+            <p><i class="ri-phone-line"></i> +91 9409319366</p>
+            <p><i class="ri-phone-line"></i> +91 9409331966</p>
+            <p><i class="ri-mail-fill"></i> svetcollege@rediffmail.com</p>
+            <p><i class="ri-map-pin-line address"></i> SARU SECTIONROAD,<br> OPP. MODI SCHOOL, IND.
+                ESTATE,<br>JAMNAGAR(GUJARAT)</p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    <script src="../JavaScripts/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+    .main{
+        height: auto;
+    }
+    
+    .page1 {
+        height: auto;
+        width: 100vw;
+    }
+
+    .photo-hero {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .photo-container {
+        height: 30%;
+        width: 30%;
+        position: relative;
+    }
+
+    .btn{
+        border: 1px solid black;
+        width: 50%;
+        padding: 15px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #FFF;
+        color: black;
+        transition: all ease .5s;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 1.2vw;
+        display: none;
+    }
+    
+    .photo-container:hover .btn{
+        display: flex;
+    }
+
+    .btn:hover{
+        background: #000;
+        color: #fff;
+        z-index: 99;
+        transition: all ease .5s;
+    }
+
+    .photo-container:hover {
+        transform: scale(105%);
+        transition: 0.5s;
+    }
+
+    
+
+    .photo-container img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        perspective: 1000px; /* For 3D animation effect */
+    }
+    
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+        /* padding-top: 1000px; */
+        justify-content: center;
+
+    }
+    
+    .gallery-item {
+        flex: 1 1 220px; /* Adjust this to change the base size of the gallery items */
+        max-width: 220px; /* Maximum size of gallery items */
+        margin: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+        overflow: hidden; /* Ensures images don't overflow their containers */
+        position: relative; /* For positioning the overlay correctly */
+        border-radius: 10px; /* Optional: Adds rounded corners to your gallery items */
+        
+    }
+    
+    .gallery-item:hover {
+        transform: scale(1.05); /* Slight scale effect on hover */
+    }
+    
+    .gallery-image {
+        width: 100%; /* Makes images fully responsive within their containers */
+        height: auto; /* Maintains aspect ratio */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+    }
+    
+    #fullscreen-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        z-index: 1000;
+        cursor: pointer;
+    }
+    
+    #fullscreen-image {
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .view-btn {
+        cursor: pointer;
+        border: 1px solid black;
+        width: 50%;
+        padding: 8px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #dadada;
+        color: black;
+        transition: all ease .5s;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 1vw;
+        display: none;
+    }
+
+    .view-btn:hover{
+        background: #000;
+        color: #fff;
+        transition: all ease .5s;
+    }
+    
+    .gallery-item:hover .view-btn {
+        display: block;
+    }
+
+
+    @media (max-width:1024px) {
+        .view-btn {
+            cursor: pointer;
+            border: 1px solid black;
+            width: 50%;
+            padding: 8px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #dadada;
+            color: black;
+            transition: all ease .5s;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 3vw;
+            display: none;
+        }
+    
+    }

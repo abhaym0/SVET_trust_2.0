@@ -29,6 +29,8 @@ body {
     width: 100%;
     padding: 1vw 1vw;
     display: flex;
+    position: relative;
+    z-index: 999;
     /* background: #000; */
 }
 
@@ -177,6 +179,7 @@ body {
     height: auto;
     width: 100%;
     display: flex;
+    background: #DFDFDF;
     flex-direction: column;
     align-items: center;
     justify-content: center;
